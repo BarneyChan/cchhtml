@@ -3,12 +3,14 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,  initial-scale=1.0, user-scalable=0, minimum-scale=1.0,  maximum-scale=1.0" />
-<title>添加会员卡</title>
+<title>添加会员卡积分</title>
 <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 <link rel="stylesheet" type="text/css" href="css/bootstrap-override.css">
+<link rel="stylesheet" type="text/css" href="css/jquery-ui-1.10.3.css">
 <link rel="stylesheet" type="text/css" href="css/base.css">
 <link rel="stylesheet" type="text/css" href="css/template.css">
 <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="js/jquery-ui-1.10.3.min.js"></script>
 <script type="text/javascript" src="js/template.js"></script>
 </head>
 
@@ -86,48 +88,77 @@
 
 
 	<div class="mainpanel">
-		<div class="add-card-wrap">
+		<div class="add-cartjfen-wrap">
 			<div class="hd">
-				<div class="bar add-bar">添加会员卡</div>
+				<div class="bar add-bar">添加会员卡积分</div>
 			</div>
            <div class="row">
                <form class="form-horizontal pt50">
                  	<div class="form-group">
                   		<label class="col-md-3 control-label">名称：</label>
-                     	 <div class="col-md-3">
-                      		<input type="text" class="form-control">
-                      	</div>
-                  	</div>
-                  	<div class="form-group">
-                  		<label class="col-md-3 control-label">背景图：</label>
-                      	<div class="col-md-5">
-                      		<img src="img/1.png" width="300" height="210" />
-                        	<input type="file"/>
-                      	</div>
-                  	</div>
-                  	<div class="form-group">
-                  		<label class="col-md-3 control-label">初始积分：</label>
                       	<div class="col-md-3">
-                      		<input type="text" class="form-control">
+                      		<input type="text" class="form-control" />
                       	</div>
                   	</div>
                   	<div class="form-group">
-                  		<label class="col-md-3 control-label">描述：</label>
+                  		<label class="col-md-3 control-label">所属会员卡：</label>
                       	<div class="col-md-3">
-                      		<textarea class="form-control" rows="8"></textarea>
+	                      	<select class="form-control">
+	                      		<option>全部</option>
+		                    		<option>小米</option>
+		                  		<option>iphone</option>
+		                    		<option>普通</option>
+	                      	</select>
+                      	</div>
+                 	 </div>
+                  	<div class="form-group">
+                  		<label class="col-md-3 control-label">积分类型：</label>
+                      	<div class="col-md-3">
+	                      	<select class="form-control">
+	                      		<option>注册</option>	                   
+		                    		<option>交易</option>
+	                      	</select>
                       	</div>
                   	</div>
-                  	<div class="group-ft col-xs-offset-3 mt50">
-                  		<button class="btn btn-default" type="reset">取消</button>
-                      	<button type="button" class="btn btn-success col-xs-offset-2">确定</button>
+                    <div class="form-group">
+                  		<label class="col-md-3 control-label">生效时间：</label>
+                  		<div class="col-md-3">
+                  	 		<input class="form-control datepicker " placeholder="" type="text" />
+                  		</div>
+                    </div>
+                  	<div class="form-group">
+                  		<label class="col-md-3 control-label">结束时间：</label>
+                      	<div class="col-md-3">
+                      		<input class="form-control datepicker " placeholder="" type="text" />
+                      	</div>
                   	</div>
-               	</form>
-          	</div>
+                      <div class="form-group">
+                  		<label class="col-md-3 control-label">交易倍率：</label>
+                      	<div class="col-md-3">
+                      		<input type="text" class="form-control" />
+                      	</div>
+                  	</div>
+                  	<div class="form-group">
+                  		<label class="col-md-3 control-label">额外积分：</label>
+                      	<div class="col-md-3">
+                      		<input type="text" class="form-control" />
+                      	</div>
+                  	</div>
+                  <div class="group-ft col-xs-offset-2 mt50">
+                      <button type="button" class="btn btn-success col-xs-offset-2">完成</button>
+                  </div>
+               </form>
+           </div>
 			
 
 		
 		</div>
 	</div>
 </div>
+<script type="text/javascript">
+	$(function(){
+		$('.datepicker').datepicker();
+	})
+</script>
 </body>
 </html>

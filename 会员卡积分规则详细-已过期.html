@@ -1,0 +1,161 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,  initial-scale=1.0, user-scalable=0, minimum-scale=1.0,  maximum-scale=1.0" />
+<title>会员卡积分</title>
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="css/bootstrap-override.css">
+<link rel="stylesheet" type="text/css" href="css/base.css">
+<link rel="stylesheet" type="text/css" href="css/template.css">
+<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="js/template.js"></script>
+</head>
+
+<body>
+<div class="header clearfix">
+	<div class="logo pull-left">
+		<img src="img/logo.png" width="50" height="60">
+	</div>
+	<div class="sidebar-toggle pull-left">
+		<i class="icon icon-toggle"></i>
+	</div>
+	<div class="crm-name pull-left">后台管理系统</div>
+	<div class="username pull-right">
+		<a>admin</a>
+		<a class="signout">
+			<i class="icon icon-sign"></i>
+		</a>
+	</div>
+</div>
+<div class="mainwrapper clearfix">
+	<div class="aside aside-small">
+		<ul class="par-nav">
+			<li class="active top-nav">
+				<a><i class="icon icon-one active"></i>导航</a>
+			</li>
+			<li>
+				<a><i class="icon icon-two"></i></a>
+				<ul class="child-nav">				
+					<li><a>会员卡</a></li>
+					<li><a>会员管理</a></li>
+					<li><a>会员黑名单</a></li>				
+				</ul>
+			</li>
+			<li>
+				<a><i class="icon icon-three"></i></a>
+				<ul class="child-nav">
+					<li><a>会员卡积分规则</a></li>
+					<li><a>店铺积分规则</a></li>
+					<li><a>人工积分</a></li>
+				</ul>
+			</li>
+			<li>
+				<a><i class="icon icon-four"></i></a>
+				<ul class="child-nav">
+					<li><a>停车券</a></li>
+					<li><a>礼品券</a></li>
+					<li><a>店铺券</a></li>
+					<li><a>卡券核销</a></li>
+				</ul>
+			</li>
+			<li>
+				<a><i class="icon icon-five"></i></a>
+				<ul class="child-nav">
+					<li><a>店铺管理</a></li>
+				</ul>
+			</li>
+			<li>
+				<a><i class="icon icon-six"></i></a>
+				<ul class="child-nav">
+					<li><a>注册协议</a></li>
+					<li><a>会员卡使用帮助</a></li>
+					<li><a>会员卡积分规则</a></li>
+				</ul>
+			</li>
+			<li>
+				<a><i class="icon icon-seven"></i></a>
+				<ul class="child-nav">
+					<li><a>权限管理</a></li>
+					<li><a>用户管理</a></li>
+					<li><a>账户设置</a></li>
+				</ul>
+			</li>
+		</ul>	
+	</div>
+
+
+	<div class="mainpanel">
+		<div class="member-jfe-wrap container">
+			<div class="hd clearfix">
+				<div class="bar state-bar pull-left">使用情况</div>
+			</div>
+           <div class="show-msg">				
+				<div class="alert alert-danger col-xs-offset-3" role="alert">             	
+					提示! 超过发行时间的规则无法修改信息。
+             	</div>
+           </div>
+			<div class="form-group">
+              	<label class="col-md-4 control-label text-right">状态：</label>
+              	<div class="col-md-3 pl50 pt3 text-muted">
+              		已过期
+                  <button class="btn btn-primary btn-xs ml20" type="submit">查看</button>
+             	</div>
+            </div>
+			<div class="hd mt25">
+				<div class="bar cancel-bar">会员卡积分规则</div>
+			</div>
+			<div class="show-msg">				
+				<div class="alert alert-danger col-xs-offset-3" role="alert">             	
+					提示! 超过发行时间的规则无法修改信息。
+             	</div>
+             	<div class="form-horizontal">
+             		<div class="form-group">
+                  	<label class="col-md-4 control-label">名称：</label>
+                       <div class="col-md-3">
+                        活动会员卡
+                    	 </div>
+                  </div>
+                 	<div class="form-group">
+                  	<label class="col-md-4 control-label">所属会员卡：</label>
+                     	<div class="col-md-3">
+                     		普通
+                     	</div>
+                 	</div>
+                 	<div class="form-group">
+                 		<label class="col-md-4 control-label">积分类型：</label>
+                     	<div class="col-md-3">
+                     		交易
+                     	</div>
+                 	</div>
+                  <div class="form-group">
+                 		<label class="col-md-4 control-label">生效时间：</label>
+                     	<div class="col-md-3">
+                     		2017年10月01号
+                     	</div>
+                	</div>
+                  <div class="form-group">
+                 		<label class="col-md-4 control-label">结束时间：</label>
+                     	<div class="col-md-3">
+                     		2017年10月01号
+                     	</div>
+                	</div>
+                  <div class="form-group">
+                 		<label class="col-md-4 control-label">交易倍率：</label>
+                     	<div class="col-md-3">
+                     		2
+                     	</div>
+                	</div>
+                  <div class="form-group">
+                 		<label class="col-md-4 control-label">额外积分：</label>
+                     	<div class="col-md-3">
+                     		100
+                     	</div>
+                	</div>
+             	</div>
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+</html>

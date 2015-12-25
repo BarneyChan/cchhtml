@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,  initial-scale=1.0, user-scalable=0, minimum-scale=1.0,  maximum-scale=1.0" />
-<title>会员管理详细页</title>
+<title>黑名单细页</title>
 <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 <link rel="stylesheet" type="text/css" href="css/bootstrap-override.css">
 <link rel="stylesheet" type="text/css" href="css/base.css">
@@ -118,7 +118,7 @@
          <div id="t1" class="tab-pane active">
             <form class="form-horizontal">
               <div class="clearfix mr50">
-                <button type="button" class="pull-right btn btn-danger" data-toggle="modal" data-target=".modal">加入黑名单</button>
+                <button type="button" class="pull-right btn btn-success" data-toggle="modal" data-target=".modal">移出黑名单</button>
               </div>
               <div class="form-group">
                 <label class="col-md-3 control-label">姓名：</label>
@@ -417,12 +417,12 @@
             <div class="modal-body text-center">
               <div class="alert alert-danger" role="alert">
                 警告!<br>     
-                确认是否将该客户移至黑名单？
+                确认是否将该客户移出黑名单？
               </div>
             </div>
             <div class="modal-footer">
               <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
-              <button type="button" class="btn btn-danger confirm" data-toggle="modal" data-target=".modal-two" data-dismiss="modal">确认</button>
+              <button type="button" class="btn btn-success confirm" data-toggle="modal" data-target=".modal-two" data-dismiss="modal">确认</button>
             </div>
           </div>
         </div>
@@ -445,8 +445,6 @@
 <div class="fixed"></div>
 <script type="text/javascript">
     $(function () { 
-      // $('.modal-one').on('hide.bs.modal', function () {
-      //   alert(111);})
 		$('.modal-footer .confirm').click(function(){
 			$('.success-modal,.fixed').show().delay(2000).fadeOut(500);
 		 })

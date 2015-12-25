@@ -1,7 +1,11 @@
-$(function(){
+$(function(){	
+	$('.aside-small .par-nav>li.on').find('a i').addClass('active')
 	$('.aside-small .par-nav>li').mouseover(function(){
+		if($(this).hasClass('on')){
+			var this_pos=$(this).find('a i').css('background-position');
+			$(this).find('a i').css('background-position',this_pos)
+		}
 		$(this).find('a i').addClass('active')
-		alert(1)
 	}).mouseout(function(){
 		$(this).find('a i').removeClass('active')
 	})
